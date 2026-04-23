@@ -1,6 +1,6 @@
 # lonelybones
 
-Independent vulnerability researcher. Native code, kernel subsystems, protocol implementations, smart contracts.
+Independent vulnerability researcher. Native code, kernel subsystems, protocol implementations, cryptography, smart contracts.
 
 ## Focus
 
@@ -22,6 +22,10 @@ Linux kernel (kTLS, net/crypto, vsock, SCTP, TIPC), OPC UA and industrial protoc
 
 - **GTE Spot CLOB and Router** *(Code4rena, High)* — DOS via order amendment bypassing `maxLimitsPerTx` protection. 4th / 997 wardens.
 - **GTE Perps and Launchpad** *(Code4rena, High)* — `CREATE2` address of Uniswap pair used by `LaunchPad` does not match address deployed by `GTELaunchpadV2PairFactory`, breaking pair resolution.
+
+**Cryptography / MPC**
+
+- **cb-mpc (Coinbase)** — Paillier encryption randomness-handling flaw: assertion cascade on r=0 and release-build NDEBUG implications for ciphertext integrity in MPC protocol paths. Accepted and fixed by Coinbase. [H1 #3180316](https://hackerone.com/reports/3180316).
 
 ## Profiles
 
